@@ -43,12 +43,14 @@ Approach: Use a null data step and business logic to write to the log
 */
 
 *Example;
+*With the use of Macros;
+%let mod_5= 5;
+
 data _null_;
     do i = 1 to 100;
         if mod(i,3) = 0 then put 'Fizz';
-        else if mod(i, 5) = 0 then put 'Buzz';
-	   else if mod(i,15) = 0 then put 'FizzBuzz';
-        else put i=;
+        else if mod(i, &mod_5.) = 0 then put 'Buzz';
+	   else put i=;
     end;
 run;
 )
