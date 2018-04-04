@@ -44,6 +44,7 @@ Approach: Use a null data step and business logic to write to the log
 */
 
 *Example;
+*new example;
 
 %let mod_5= 5;
 
