@@ -23,8 +23,9 @@ run;
 %let name=Chinki Rai;
 %let classname=stat6863;
 
+
 data _null_;
-	put "Hello,&classname.! This is &name.!";
+	put "&classname.! This is &name.!";
 run;
 
 /*
@@ -43,7 +44,8 @@ Approach: Use a null data step and business logic to write to the log
 */
 
 *Example;
-*With the use of Macros;
+*new example;
+
 %let mod_5= 5;
 
 data _null_;
